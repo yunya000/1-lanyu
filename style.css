@@ -14,14 +14,14 @@ body {
 }
 
 header {
-    position: absolute; /* 使用絕對定位 */
-    top: 6%; /* 垂直居中 */
-    left: 50%; /* 水平居中 */
-    transform: translate(-50%, -50%); /* 偏移自身寬高的一半，精確置中 */
-    padding: 20px 100px;
+    position: absolute;
+    top: 6%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 18px 150px;
     display: flex;
-    justify-content: center; /* 內容水平居中 */
-    align-items: center; /* 內容垂直居中 */
+    justify-content: center; 
+    align-items: center; 
     z-index: 100;
     border-bottom:2px solid white;
 }
@@ -57,24 +57,25 @@ header {
 }
 
 .parallax img {
-    position: absolute; /* 絕對定位，讓所有圖片重疊在一起 */
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* 將圖片中心對齊容器中心 */
-    max-width: 100%; /* 確保圖片不會超出容器 */
-    max-height: 100%; /* 確保圖片不會超出容器高度 */
-    object-fit: cover; /* 確保圖片比例不變 */
+    transform: translate(-50%, -50%); 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
 }
 
 
 #text {
-    position: absolute; /* 必須設置為定位模式以便調整位置 */
-    top: 30%; /* 調整到容器高度的 40% */
-    left: 50%; /* 保持水平居中 */
-    transform: translate(-50%, -50%); /* 水平和垂直方向居中對齊 */
-    font-size: 3em;
+    position: absolute; 
+    top: 28%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family:Georgia
 }
 
 .sec {
@@ -87,10 +88,11 @@ header {
     font-size: 3em;
     color: rgb(0, 125, 220);
     margin-bottom: 10px;
+    font-family: PMingLiU 
 }
 
 .sec p {
-    font-size: 1em;
+    font-size: 1.3em;
     color: #333;
     font-weight: 300;
 }
