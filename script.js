@@ -9,7 +9,7 @@ let p61  = document.getElementById('p6-1');
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
-    text.style.marginTop = value * 1.8+ 'px';
+    text.style.marginTop = value * 5+ 'px';
     p2.style.marginTop = value * 0.1 + 'px';
     p3.style.marginTop = value * 0.3 + 'px';
     p4.style.marginTop = value * 0.6 + 'px';
