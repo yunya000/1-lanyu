@@ -17,21 +17,22 @@ body, html {
 
 header {
     position: absolute;
-    top: 6%;
+    top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 18px 150px;
+    padding: 15px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
-    border-bottom: 2px solid white;
+    border-bottom: 2.3px solid white;
+    width: 80%;
 }
 
 .navigation a {
     text-decoration: none;
     color: white;
-    padding: 6px 15px;
+    padding: 5px 10px;
     border-radius: 20px;
     margin: 0 10px;
     font-weight: 600;
@@ -69,14 +70,16 @@ header {
 
 #text {
     position: absolute;
-    top: 28%;
-    left: 50%;
+    top: 27%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    font-size: 3em;
+    font-size: 80px;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    font-family: Times, serif;
-    z-index: 10;
+    font-family: serif;
+    font-weight:bold;
+    text-align: left; /* 讓文字內容向右齊行 */
+    
 }
 
 /* Section styling */
@@ -131,3 +134,5 @@ header {
         padding: 20px;
     }
 }
+
+  
