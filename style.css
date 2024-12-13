@@ -107,7 +107,41 @@ header {
     font-family: STHeiti;
 }
 
+.weltolanyu-text{
+    text-align: center;
+    font-size: 90px;
+    color: #000000;
+    font-family:Arial;
+    font-weight: 700;
+}
 
+.Lanyu-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px; /* 添加内边距以分隔图片 */
+    white-space: nowrap; /* 確保所有列表項水平排列 */
+}
+
+.Lanyu-foto img {
+    width: 300px; /* 设置统一的宽度 */
+    height: auto; /* 自动调整高度 */
+    margin: px; /* 图片之间的间距 */
+}
+
+
+.Lanyu-foto ul {
+    display: flex;
+    list-style: none; /* 移除點標記 */
+    padding: 0;
+    margin: 0;
+}
+
+.Lanyu-foto li {
+    display: inline-block;
+    margin-right: 10px; /* 設定圖片之間的間距 */
+}
 
 .simple-footer {
     background-color: rgb(0, 125, 220);
