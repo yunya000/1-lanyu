@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 全局樣式 */
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+   
+}
+
+header {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 2.3px solid white;
+    width: 65%;
+  
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 176, 220);
+}
+
+
+/* 小視窗的樣式 */
+#tooltip {
+    display: none; /* 默認隱藏 */
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    font-size: 14px;
+}
+
+#tooltip ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tooltip ul li {
+    margin: 5px 0;
+}
+
+#tooltip ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#tooltip ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+.note-foto img{
+     position: relative;
+     left: 15%; /* 向右偏移 10% */
+    width: 70%; /* 设置统一的宽度 */
+    height: 70%; /* 自动调整高度 */
+    list-style: none;
+}
+
+.aboutlanyu-text1{
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    font-family:Arial;
+    font-weight: 700;
+    list-style: none; 
+}
+
+.map-foto img {
+    width: 90%; /* 设置统一的宽度 */
+    height: 90%; /* 自动调整高度 */
+    list-style: none;
+    
+}
+
+
+.container {
+    max-width: 1200px; /* 限制容器寬度，避免太寬 */
+    margin: 0 auto; /* 垂直置中 */
+    padding: 40px 15px; /* 添加內邊距，保持內容和邊界的間距 */
+    border-radius: 8px; /* 圓角效果 */
+    
+    
+}
+
+.row {
+    margin: 30px 30px; /* 增加每行的間距 */
+}
+
+.col {
+    padding: 17px; /* 為每個列添加間距 */
+    text-align: center; /* 中心對齊文字 */
+    background-color: #ffffff; /* 每列的背景色 */
+    border: 1px solid #dee2e6; /* 增加輕微邊框 */
+    border-radius: 8px; /* 圓角效果 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* 列的輕微陰影 */
+    font-size: 24px; /* 適中的文字大小 */
+    font-weight: 600; /* 半粗字體 */
+    color: #333; /* 文字顏色 */
+}
+
+.col:hover {
+    background-color: rgb(238, 255, 56); /* 鼠標懸停時改變背景顏色 */
+    color: #ffffff; /* 文字顏色調整為白色，增強對比 */
+    box-shadow: 6px 4px 8px rgba(26, 26, 26, 0.3); /* 加深陰影顏色並修正語法 */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* 添加過渡效果 */
+}
+
