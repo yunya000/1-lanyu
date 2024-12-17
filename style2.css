@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* -------- 全局樣式--------  */
+/* --------------------- 全局樣式---------------------  */
 body, html {
     margin: 0;
     padding: 0;
@@ -40,7 +40,7 @@ body {
     background-repeat: no-repeat; /* 禁止背景圖片重複 */
 }
 
-
+/* --------------------- 頂部樣式---------------------  */
 .navigation a {
     text-decoration: none;
     color: white;
@@ -58,7 +58,7 @@ body {
 }
 
 
-/* -------- 小視窗的樣式--------  */
+/* ---------------------- 小視窗的樣式----------------------  */
 #tooltip {
     display: none; /* 默認隱藏 */
     position: absolute;
@@ -92,7 +92,7 @@ body {
 }
 
 
-/*-------- 頂部部落介紹說明-------- */
+/*---------------------- 頂部部落介紹說明---------------------- */
 .note-foto img{
      position: relative;
      left: 15%; /* 向右偏移 10% */
@@ -102,7 +102,7 @@ body {
 }
 
 
-/* -------- 島嶼地圖--------*/
+/* ---------------------- 島嶼地圖----------------------*/
 .map-foto {
     display: flex; 
     justify-content: center; 
@@ -128,11 +128,11 @@ body {
 
 
 
-/* 部落標題樣式 */
+/* ----------------------部落標題樣式---------------------- */
 .title {
     text-align: center; /* 文字居中對齊 */
     padding: 60px 40px; /* 增加更多的上下內邊距，讓標題更顯眼 */
-    margin-top: 50px; /* 增加標題區域上方的外邊距 */
+    margin-top: 30px; /* 增加標題區域上方的外邊距 */
     margin-bottom: 50spx; /* 增加標題區域下方的外邊距 */
     background-image: url('aboutfoto/deco.png');
     background-size: cover;
@@ -161,7 +161,7 @@ body {
 
 
 
-/* -------- 朗島部落-------- */
+/* ---------------------- 朗島部落---------------------- */
 .langdao .wrapper {
     display: flex; /* 使用 Flexbox 讓內容水平排列 */
     align-items: center; 
@@ -194,7 +194,7 @@ body {
 
 
 
-/* -------- 椰油部落-------- */
+/* ---------------------- 椰油部落---------------------- */
 .yayo .wrapper {
     display: flex; /* 使用 Flexbox 讓內容水平排列 */
     align-items: center;
@@ -229,7 +229,7 @@ body {
 }
 
 
-/* -------- 東清部落-------- */
+/* ---------------------- 東清部落---------------------- */
 .dongching .wrapper {
     display: flex; /* 使用 Flexbox 讓內容水平排列 */
     align-items: center;
@@ -263,7 +263,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 文字陰影，增加層次感 */
 }
 
-/* -------- 紅頭部落-------- */
+/* --------------------- 紅頭部落--------------------- */
 .redhead .wrapper {
     display: flex; /* 使用 Flexbox 讓內容水平排列 */
     align-items: center;
@@ -297,9 +297,29 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 文字陰影，增加層次感 */
 }
 
+/* ----------------------  回頂部按鈕---------------------- */
+#back-to-top {
+    position: fixed; /* 固定在視窗上 */
+    bottom: 40px; /* 距離底部的距離 */
+    right: 40px; /* 距離右側的距離 */
+    background-color: #ffffff; 
+    color: rgb(0, 52, 207); /* 按鈕文字顏色 */
+    border-radius: 50%; /* 圓形按鈕 */
+    width: 60px; /* 按鈕寬度 */
+    height: 60px; /* 按鈕高度 */
+    font-size: 25px; /* 字體大小 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 添加陰影效果 */
+    z-index: 1000; /* 保持在最上層 */
+    transition: all 0.3s ease-in-out; /* 平滑過渡效果 */
+}
+
+#back-to-top:hover {
+    background-color: #f9ff58; /* 懸停時改變背景色 */
+}
 
 
 
+/* --------------------- 部落書籤---------------------  */
 .container {
     max-width: 1200px; /* 限制容器寬度，避免太寬 */
     margin: 0 auto; /* 垂直置中 */
