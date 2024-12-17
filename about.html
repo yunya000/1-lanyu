@@ -13,7 +13,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js"></script>
        
 </head>
-<body  background="aboutfoto/about-back.png";>
+<body  background="aboutfoto/background.png";>
 
     <header>
         <nav class="navigation">
@@ -27,26 +27,25 @@
 <!-- 小視窗內容 -->
 <div id="tooltip">
     <ul>
-        <li><a href="#history">蘭嶼歷史</a></li>
-        <li><a href="#culture">部落文化</a></li>
-        <li><a href="#landscape">自然風貌</a></li>
+        <li><a href="#history">部落介紹</a></li>
+        <li><a href="#culture">蘭嶼交通</a></li>
+        <li><a href="#landscape">蘭嶼歷史</a></li>
     </ul>
 </div>
+
 
     <section class="note-foto">
         <br><br><br>
         <div>
-            <img src="aboutfoto/note.png" id="a2">
+            <img src="aboutfoto/note.png" >
         </div>
         <br>
     </section>
-   
-
-
+    <br> <br>
 
     <section class="map-foto">
         <div class="wrapper">
-            <img src="aboutfoto/map.png" id="a2">
+            <img src="aboutfoto/map.png" >
         </div>
         <br>
         <br>
@@ -56,22 +55,105 @@
     <div class="container"> 
         <div class="row align-items-end">
         <div class="col">
-         朗島部落
+            <a href="#langdao-title">朗島部落</a>
         </div>
         <div class="col">
-          東清部落
+            <a href="#yayo-title">椰油部落</a>
         </div>
         <div class="col">
-          椰油部落
+            <a href="#dongching-title">東清部落</a>
         </div>
         <div class="col">
-            紅頭部落
+            <a href="#redhead-title">紅頭部落</a>
           </div>
       </div>
     </div>
     
-   
-    
+    <br> <br> <br><br><br>
+    <section class="title" id="langdao-title">
+        <br>
+        <p>朗島部落</p>
+        <br>
+    </section>
+    <br> <br> <br><br><br>
+
+    <section class="langdao">
+        <ul class="wrapper">
+            <li><img src="aboutfoto/landao.png"></li>
+            <li><p>I-raraley指有禮貌，道路還沒開通前， <br>
+                朗島是東清部落和椰油部落之居民的必經之地， <br>
+                因此朗島部落見人就打招呼的親切行為，便被稱做有禮貌的部落。 <br>
+                在蘭嶼六個部落中領域是最大的，部落比其他部落有較多的奇岩異石。
+            </p></li>
+        </ul>
+    </section>
+
+    <br> <br> <br><br><br>
+    <section class="title" id="yayo-title">
+        <br>
+        <p>椰油部落</p>
+        <br>
+    </section>
+    <br> <br> <br><br><br>
+
+    <section class="yayo">
+        <ul class="wrapper">
+            <li><img src="aboutfoto/yayo.png"></li>
+            <li><p>
+                Yayo，指有豐富的食物之地，商家林立，在蘭嶼六個部落中最熱鬧。 <br>
+                椰油部落也是蘭嶼地區的行政中心，及貨物進出口的主要運輸要道， <br>
+                為島上主要的集散中心。背山面海， <br>
+                居住人口約有30%的非達悟族人在此生活， <br>
+                以外來投資者及公務體系人員為主，因此和其他部落生活樣貌有所不同。
+            </p></li>
+        </ul>
+    </section>
+
+    <br> <br> <br><br><br>
+    <section class="title" id="dongching-title">
+        <br>
+        <p>東清部落</p>
+        <br>
+    </section>
+    <br> <br> <br><br><br>
+
+    <section class="dongching">
+        <ul class="wrapper">
+            <li><img src="aboutfoto/dongching.png"></li>
+            <li><p>
+                位在蘭嶼東北岸，是台灣第一道曙光照耀的地方， <br>
+                部落前方美麗海灣的灘頭是祭儀活動的地點， <br>
+                天然珊瑚礁岩是部落婦女採集海菜之地， <br>
+                海域則是男人從事海上活動之地， <br>
+                當地人常說：「山林是我們的倉庫，海洋是我們的冰箱」以表感恩之情。
+            </p></li>
+        </ul>
+    </section>
+
+
+    <br> <br> <br><br><br>
+    <section class="title" id="redhead-title">
+        <br>
+        <p>紅頭部落</p>
+        <br>
+    </section>
+    <br> <br> <br><br><br>
+
+    <section class="redhead">
+        <ul class="wrapper">
+            <li><img src="aboutfoto/redhead.png"></li>
+            <li><p>
+                飛魚傳說的起源—紅頭部落，位在蘭嶼的西南方， <br>
+                傳統的地界是自現在的核廢廠至紅頭溪，背山面海，坡度較其他部落大。 <br>
+                八代灣和小蘭嶼是部落主要海洋漁獵範圍。 <br>
+                因距港口與機場近，所以對外開放性較高，移入的人口也較多。 <br>
+                部落內的蘭嶼鄉衛生所為守護蘭嶼人健康的唯一單位， <br>
+                唯一的郵局也在此部落，爭議最大的核廢料貯存場也在紅頭部落傳統界線的末端。
+            </p></li>
+        </ul>
+    </section>
+
+
     <script>
         gsap.registerPlugin(ScrollTrigger);
  
@@ -93,7 +175,7 @@
                  x: xEnd,
                  scrollTrigger: {
                      trigger: section,
-                     scrub: 4,
+                     scrub: 5,
                      duration: 10,
                  },
              }
@@ -110,7 +192,7 @@
                  x: xEnd,
                  scrollTrigger: {
                      trigger: section,
-                     scrub: 4,
+                     scrub: 5,
                      duration: 10,
                  },
              }

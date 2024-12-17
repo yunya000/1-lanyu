@@ -50,3 +50,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+
+gsap.utils.toArray('section').forEach((section, index) => {
+    const wrapper = section.querySelector('.wrapper');
+    if (!wrapper) return;
+
+    // 根據索引決定偏移量
+    let xStart, xEnd;
+    if (index % 2 === 1) {
+        // 奇數索引（向左偏移）
+        xStart = '-60%';
+        xEnd = '60%';
+    } else {
+        // 偶數索引（向右偏移）
+        xStart = '50%';
+        xEnd = '-50%';
+    }
+
+    // 進行動畫
+    gsap.fromTo(
+        wrapper,
+        { x: xStart }, // 起始位置
+        {
+            x: xEnd, // 結束位置
+            scrollTrigger: {
+                trigger: section,
+                scrub: 2,
+                start: 'top center',
+                end: 'bottom top',
+            },
+        }
+    );
+});
+
