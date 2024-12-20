@@ -20,7 +20,7 @@ header {
     top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 8px 0px;
+    padding: 7px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,9 +33,9 @@ header {
 .navigation a {
     text-decoration: none;
     color: white;
-    padding: 3px 20px;
+    padding: 5px 20px;
     border-radius: 20px;
-    margin: 0 17px;
+    margin: 0 22px;
     font-size: 17px;
     font-weight: 600;
     white-space: nowrap; /* 禁止文字換行 */
@@ -52,10 +52,6 @@ header {
     display: flex; /* 強制水平排列 */
     
 }
-
-
-
-
 
 
 
