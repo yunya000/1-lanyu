@@ -16,6 +16,21 @@ body, html {
    
 }
 
+
+body {
+    background-image: url('aboutfoto/background.png'); /* 設定背景圖片 */
+    background-size: cover; /* 背景圖片覆蓋整個頁面 */
+    background-position: center; /* 背景圖片居中顯示 */
+    background-attachment: fixed; /* 背景圖片隨著滾動固定 */
+    background-repeat: no-repeat; /* 禁止背景圖片重複 */
+}
+
+
+
+
+/* --------------------- 頂部樣式---------------------  */
+
+
 header {
     position: absolute;
     top: 4%;
@@ -31,16 +46,6 @@ header {
   
 }
 
-
-body {
-    background-image: url('aboutfoto/background.png'); /* 設定背景圖片 */
-    background-size: cover; /* 背景圖片覆蓋整個頁面 */
-    background-position: center; /* 背景圖片居中顯示 */
-    background-attachment: fixed; /* 背景圖片隨著滾動固定 */
-    background-repeat: no-repeat; /* 禁止背景圖片重複 */
-}
-
-/* --------------------- 頂部樣式---------------------  */
 .navigation a {
     text-decoration: none;
     color: white;

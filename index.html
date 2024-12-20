@@ -12,15 +12,35 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js"></script>
 </head>
+
+
 <body>
     <header>
-        <nav class="navigation">
-            <a href="#" class="active">首頁</a>
-            <a href="./about.html">關於蘭嶼</a>
-            <a href="#">推薦景點</a>
-            <a href="#">美食地圖</a>
+        <nav class="navigation navbar">
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav flex-row"> <!-- 使用 flex-row 保持水平排列 -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">關於蘭嶼</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">推薦景點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">美食地圖</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+
+      
+
+      
+      
+      
 
      <section class="parallax">
         <img src="07.png" id="p7">
@@ -112,10 +132,10 @@
     console.log(section, index);
 
     const wrapper = section.querySelector('.wrapper');
-    if (!wrapper) return; // 确保有 .wrapper 才继续
+    if (!wrapper) return; 
 
     if (index % 2 === 0) {
-        // 偶数索引：从左向右滑动
+        // 偶数索引：左向右滑
         const x = '-100%';
         const xEnd = (wrapper.scrollWidth - section.offsetWidth) * -1;
 
@@ -131,7 +151,7 @@
             }
         );
     } else {
-        // 奇数索引：从右向左滑动
+        // 奇數索引：右向左
         const x = '100%';
         const xEnd = 0;
 

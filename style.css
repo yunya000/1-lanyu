@@ -20,24 +20,25 @@ header {
     top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 15px 0px;
+    padding: 8px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
     border-bottom: 2.3px solid white;
     width: 65%;
-  
 }
+
 
 .navigation a {
     text-decoration: none;
     color: white;
-    padding: 5px 16px;
+    padding: 3px 20px;
     border-radius: 20px;
-    margin: 0 10px;
+    margin: 0 17px;
+    font-size: 17px;
     font-weight: 600;
-    
+    white-space: nowrap; /* 禁止文字換行 */
 }
 
 .navigation a:hover,
@@ -45,6 +46,19 @@ header {
     background-color: rgba(255, 255, 255, 0.8);
     color: rgb(0, 176, 220);
 }
+
+/* 保持水平排列樣式 */
+.navigation .navbar-nav {
+    display: flex; /* 強制水平排列 */
+    
+}
+
+
+
+
+
+
+
 
 /* Parallax section */
 .parallax {
@@ -164,7 +178,7 @@ header {
     font-size: 14px;
  
 }
-/* Media query for responsiveness */
+
 @media (max-width: 768px) {
     header {
         padding: 18px 50px;
