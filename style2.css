@@ -130,32 +130,31 @@ body {
 
 /* ----------------------部落標題樣式---------------------- */
 .title {
-    text-align: center; /* 文字居中對齊 */
-    padding: 60px 40px; /* 增加更多的上下內邊距，讓標題更顯眼 */
-    margin-top: 30px; /* 增加標題區域上方的外邊距 */
-    margin-bottom: 50spx; /* 增加標題區域下方的外邊距 */
+    text-align: center; 
+    padding: 60px 40px;
+    margin-top: 30px;
+    margin-bottom: 50spx; 
     background-image: url('aboutfoto/deco.png');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center center; 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* 增加陰影，讓標題更突出 */
-    font-family: 'Roboto', sans-serif; /* 使用現代字體 */
-    letter-spacing: 2px; /* 增加字母間距 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px; 
     
 }
 
 .title p {
-    font-size: 36px; /* 更大的字體 */
-    font-weight: 700; /* 加粗文字 */
-    color: white; /* 文字顏色為白色，以對比漸變背景 */
-    text-transform: uppercase; /* 文字大寫 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 文字陰影，增加層次感 */
+    font-size: 36px; 
+    font-weight: 700; 
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
  
 }
-/* 在小螢幕上，調整文字大小 */
 @media (max-width: 768px) {
     .title p {
-        font-size: 28px; /* 在小螢幕上調整字體大小 */
+        font-size: 28px; 
     }
 }
 
@@ -163,10 +162,10 @@ body {
 
 /* ---------------------- 朗島部落---------------------- */
 .langdao .wrapper {
-    display: flex; /* 使用 Flexbox 讓內容水平排列 */
+    display: flex;
     align-items: center; 
-    padding: 20px; /* 添加內邊距 */
-    flex-wrap: wrap; /* 當空間不足時換行 */
+    padding: 20px; 
+    flex-wrap: wrap; 
 }
 
 .langdao .wrapper li {
@@ -176,35 +175,35 @@ body {
 }
 
 .langdao img {
-    max-width: 100%; /* 圖片最多填滿父元素 */
-    height: auto; /* 保持圖片比例 */
+    max-width: 100%; 
+    height: auto;
     
 }
 
 .langdao p {
-    margin: 0; /* 移除預設 margin */
-    font-size: 18px; /* 設定適中的文字大小 */
-    line-height: 1.5; /* 增加行間距 */
-    color:  white; /* 文字顏色 */
-    text-align: left; /* 文字左對齊 */
-    font-size: 20px; /* 更大的字體 */
-    font-weight: 500; /* 加粗文字 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 文字陰影，增加層次感 */
+    margin: 0;
+    font-size: 18px; 
+    line-height: 1.5;
+    color:  white;
+    text-align: left; 
+    font-size: 20px; 
+    font-weight: 500; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 
 
 /* ---------------------- 椰油部落---------------------- */
 .yayo .wrapper {
-    display: flex; /* 使用 Flexbox 讓內容水平排列 */
+    display: flex; 
     align-items: center;
-    padding: 20px; /* 添加內邊距 */
-    flex-wrap: wrap; /* 當空間不足時換行 */
+    padding: 20px; 
+    flex-wrap: wrap; 
    
 }
 
 .yayo .wrapper li {
-    list-style: none; /* 移除點標記 */
+    list-style: none; 
     flex: 1 1 50%;
     max-width: 50%;
     
@@ -212,34 +211,34 @@ body {
 }
 
 .yayo img {
-    max-width: 100%; /* 圖片最多填滿父元素 */
-    height: auto; /* 保持圖片比例 */
+    max-width: 100%; 
+    height: auto;
     
 }
 
 .yayo p {
-    margin: 0; /* 移除預設 margin */
-    font-size: 18px; /* 設定適中的文字大小 */
-    line-height: 1.5; /* 增加行間距 */
-    color:  white; /* 文字顏色 */
-    text-align: left; /* 文字左對齊 */
-    font-size: 20px; /* 更大的字體 */
-    font-weight: 500; /* 加粗文字 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 文字陰影，增加層次感 */
+    margin: 0; 
+    font-size: 18px;
+    line-height: 1.5; 
+    color:  white; 
+    text-align: left; 
+    font-size: 20px; 
+    font-weight: 500; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
 /* ---------------------- 東清部落---------------------- */
 .dongching .wrapper {
-    display: flex; /* 使用 Flexbox 讓內容水平排列 */
+    display: flex; 
     align-items: center;
-    padding: 20px; /* 添加內邊距 */
-    flex-wrap: wrap; /* 當空間不足時換行 */
+    padding: 20px; 
+    flex-wrap: wrap;
    
 }
 
 .dongching .wrapper li {
-    list-style: none; /* 移除點標記 */
+    list-style: none; 
     flex: 1 1 50%;
     max-width: 50%;
     
@@ -247,33 +246,32 @@ body {
 }
 
 .dongching img {
-    max-width: 100%; /* 圖片最多填滿父元素 */
-    height: auto; /* 保持圖片比例 */
+    max-width: 100%; 
+    height: auto; 
     
 }
 
 .dongching p {
-    margin: 0; /* 移除預設 margin */
-    font-size: 18px; /* 設定適中的文字大小 */
-    line-height: 1.5; /* 增加行間距 */
-    color:  white; /* 文字顏色 */
-    text-align: left; /* 文字左對齊 */
-    font-size: 20px; /* 更大的字體 */
-    font-weight: 500; /* 加粗文字 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 文字陰影，增加層次感 */
+    margin: 0; 
+    font-size: 18px; 
+    line-height: 1.5; 
+    color:  white; 
+    text-align: left;
+    font-size: 20px; 
+    font-weight: 500; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 /* --------------------- 紅頭部落--------------------- */
 .redhead .wrapper {
-    display: flex; /* 使用 Flexbox 讓內容水平排列 */
-    align-items: center;
-    padding: 20px; /* 添加內邊距 */
-    flex-wrap: wrap; /* 當空間不足時換行 */
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
    
 }
 
 .redhead .wrapper li {
-    list-style: none; /* 移除點標記 */
+    list-style: none; 
     flex: 1 1 50%;
     max-width: 50%;
     
@@ -281,70 +279,70 @@ body {
 }
 
 .redhead img {
-    max-width: 100%; /* 圖片最多填滿父元素 */
-    height: auto; /* 保持圖片比例 */
+    max-width: 100%; 
+    height: auto;
     
 }
 
 .redhead p {
-    margin: 0; /* 移除預設 margin */
-    font-size: 18px; /* 設定適中的文字大小 */
-    line-height: 1.5; /* 增加行間距 */
-    color:  white; /* 文字顏色 */
-    text-align: left; /* 文字左對齊 */
-    font-size: 20px; /* 更大的字體 */
-    font-weight: 500; /* 加粗文字 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 文字陰影，增加層次感 */
+    margin: 0; 
+    font-size: 18px; 
+    line-height: 1.5; 
+    color:  white; 
+    text-align: left;
+    font-size: 20px; 
+    font-weight: 500; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 /* ----------------------  回頂部按鈕---------------------- */
 #back-to-top {
-    position: fixed; /* 固定在視窗上 */
-    bottom: 40px; /* 距離底部的距離 */
-    right: 40px; /* 距離右側的距離 */
+    position: fixed;
+    bottom: 40px; 
+    right: 40px; 
     background-color: #ffffff; 
-    color: rgb(0, 52, 207); /* 按鈕文字顏色 */
-    border-radius: 50%; /* 圓形按鈕 */
-    width: 60px; /* 按鈕寬度 */
-    height: 60px; /* 按鈕高度 */
-    font-size: 25px; /* 字體大小 */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 添加陰影效果 */
-    z-index: 1000; /* 保持在最上層 */
-    transition: all 0.3s ease-in-out; /* 平滑過渡效果 */
+    color: rgb(0, 52, 207); 
+    border-radius: 50%;
+    width: 60px; 
+    height: 60px;
+    font-size: 25px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
 }
 
 #back-to-top:hover {
-    background-color: #f9ff58; /* 懸停時改變背景色 */
+    background-color: #f9ff58;
 }
 
 
 
 /* --------------------- 部落書籤---------------------  */
 .container {
-    max-width: 1200px; /* 限制容器寬度，避免太寬 */
-    margin: 0 auto; /* 垂直置中 */
-    padding: 40px 15px; /* 添加內邊距，保持內容和邊界的間距 */
-    border-radius: 8px; /* 圓角效果 */
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 40px 15px; 
+    border-radius: 8px; 
 }
 
 .row {
-    margin: 30px 30px; /* 增加每行的間距 */
+    margin: 30px 30px; 
 }
 
 .col {
-    padding: 17px; /* 為每個列添加間距 */
-    text-align: center; /* 中心對齊文字 */
-    background-color: #ffffff; /* 每列的背景色 */
-    border: 1px solid #dee2e6; /* 增加輕微邊框 */
-    border-radius: 8px; /* 圓角效果 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* 列的輕微陰影 */
-    font-size: 24px; /* 適中的文字大小 */
-    font-weight: 600; /* 半粗字體 */
-    color: #333; /* 文字顏色 */
+    padding: 17px; 
+    text-align: center; 
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+    font-size: 24px; 
+    font-weight: 600;
+    color: #333; 
 }
 
 .col:hover {
-    transform: translateY(-10px); /* 微微上移 */
+    transform: translateY(-10px); 
     background: rgb(216, 205, 176); 
     color: #fff;
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
@@ -352,12 +350,12 @@ body {
 }
 
 .container a {
-    color: inherit; /* 继承父元素的文字颜色 */
-    text-decoration: none; /* 移除下划线 */
+    color: inherit; 
+    text-decoration: none; 
 }
 
 .container a:hover {
-    text-decoration: none; /* 悬停时无下划线 */
-    color: inherit; /* 保持颜色一致 */
+    text-decoration: none; 
+    color: inherit;
 }
 

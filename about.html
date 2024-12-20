@@ -167,10 +167,9 @@
      console.log(section, index);
  
      const wrapper = section.querySelector('.wrapper');
-     if (!wrapper) return; // 确保有 .wrapper 才继续
+     if (!wrapper) return; 
  
      if (index % 2 === 1) {
-         // 偶数索引：从左向右滑动
          const x = '-100%';
          const xEnd = (wrapper.scrollWidth - section.offsetWidth) * -1;
  
@@ -187,7 +186,7 @@
              }
          );
      } else {
-         // 奇数索引：从右向左滑动
+         // 奇數索引：右向左滑
          const x = '100%';
          const xEnd = 0;
  
