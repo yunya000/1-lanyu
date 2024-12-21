@@ -16,22 +16,37 @@
 <body  background="aboutfoto/background.png";>
 
     <header>
-        <nav class="navigation">
-            <a href="./index.html">首頁</a>
-            <a href="./about.html" class="active" id="about-link">關於蘭嶼</a>
-            <a href="#">推薦景點</a>
-            <a href="#">美食地圖</a>
+        <nav class="navbar navbar-expand-lg navigation">
+            <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link ">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="active" id="about-link">關於蘭嶼</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">推薦景點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">美食地圖</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+
+
 
 <!---------------------------- 小視窗內容 ---------------------------->
 <div id="tooltip">
     <ul>
         <li><a href="#history">部落介紹</a></li>
-        <li><a href="#culture">蘭嶼交通</a></li>
-        <li><a href="#landscape">蘭嶼歷史</a></li>
+        <li><a href="#transfer-foto">蘭嶼交通</a></li>
     </ul>
 </div>
+
+
 
 <!---------------------------- 回頂部按鈕 ---------------------------->
 <button id="back-to-top" class="btn btn-primary">↑</button>
@@ -40,7 +55,7 @@
     <section class="note-foto">
         <br><br><br>
         <div>
-            <img src="aboutfoto/note.png" >
+            <img class="img-fluid" src="aboutfoto/note.png" >
         </div>
         <br>
     </section>
@@ -48,7 +63,7 @@
 <!---------------------------- 部落地圖 ----------------------------->
     <section class="map-foto">
         <div class="wrapper">
-            <img src="aboutfoto/map.png" >
+            <img class="img-fluid" src="aboutfoto/map.png" >
         </div>
         <br>
         <br>
@@ -75,34 +90,33 @@
     
     <section class="title" id="langdao-title">
         <br>
-        <p>朗島部落</p>
+        <p class="h4">朗島部落</p>
         <br>
     </section>
     <br> <br> <br><br><br>
 
     <section class="langdao">
         <ul class="wrapper">
-            <li><img src="aboutfoto/landao.png"></li>
-            <li><p>I-raraley指有禮貌，道路還沒開通前， <br>
+            <li><img class="img-fluid" src="aboutfoto/landao.png"></li>
+            <li><p class="h2">I-raraley指有禮貌，道路還沒開通前， <br>
                 朗島是東清部落和椰油部落之居民的必經之地， <br>
                 因此朗島部落見人就打招呼的親切行為，便被稱做有禮貌的部落。 <br>
-                在蘭嶼六個部落中領域是最大的，部落比其他部落有較多的奇岩異石。
-            </p></li>
+                在蘭嶼六個部落中領域是最大的，部落比其他部落有較多的奇岩異石。</p></li>
         </ul>
     </section>
 <!---------------------------- 椰油部落 ----------------------------->
     <br> <br> <br><br><br>
     <section class="title" id="yayo-title">
         <br>
-        <p>椰油部落</p>
+        <p class="h4">椰油部落</p>
         <br>
     </section>
     <br> <br> <br><br><br>
 
     <section class="yayo">
         <ul class="wrapper">
-            <li><img src="aboutfoto/yayo.png"></li>
-            <li><p>
+            <li><img class="img-fluid" src="aboutfoto/yayo.png"></li>
+            <li><p class="h2">
                 Yayo，指有豐富的食物之地，商家林立，在蘭嶼六個部落中最熱鬧。 <br>
                 椰油部落也是蘭嶼地區的行政中心，及貨物進出口的主要運輸要道， <br>
                 為島上主要的集散中心。背山面海， <br>
@@ -115,15 +129,15 @@
     <br> <br> <br><br><br>
     <section class="title" id="dongching-title">
         <br>
-        <p>東清部落</p>
+        <p class="h4">東清部落</p>
         <br>
     </section>
     <br> <br> <br><br><br>
 
     <section class="dongching">
         <ul class="wrapper">
-            <li><img src="aboutfoto/dongching.png"></li>
-            <li><p>
+            <li><img class="img-fluid" src="aboutfoto/dongching.png"></li>
+            <li><p class="h2">
                 位在蘭嶼東北岸，是台灣第一道曙光照耀的地方， <br>
                 部落前方美麗海灣的灘頭是祭儀活動的地點， <br>
                 天然珊瑚礁岩是部落婦女採集海菜之地， <br>
@@ -137,15 +151,15 @@
     <br> <br> <br><br><br>
     <section class="title" id="redhead-title">
         <br>
-        <p>紅頭部落</p>
+        <p class="h4">紅頭部落</p>
         <br>
     </section>
     <br> <br> <br><br><br>
 
     <section class="redhead">
         <ul class="wrapper">
-            <li><img src="aboutfoto/redhead.png"></li>
-            <li><p>
+            <li><img class="img-fluid" src="aboutfoto/redhead.png"></li>
+            <li><p class="h2">
                 飛魚傳說的起源—紅頭部落，位在蘭嶼的西南方， <br>
                 傳統的地界是自現在的核廢廠至紅頭溪，背山面海，坡度較其他部落大。 <br>
                 八代灣和小蘭嶼是部落主要海洋漁獵範圍。 <br>
@@ -155,7 +169,45 @@
             </p></li>
         </ul>
     </section>
+<!---------------------------- 蘭嶼交通 ----------------------------->
+<section class="transfer-foto" id="transfer-foto"> 
+    <br><br><br><br>
+    <div>
+        <img src="aboutfoto/transfer.png" >
+    </div>
+    <br>
+</section>
+<br> <br><br>
 
+
+<!----------------------------搭乘客輪去蘭嶼----------------------------->
+<section class="title2" id="boat-title">
+    <br>
+    <p>搭乘客輪去蘭嶼去蘭嶼搭船是最多旅人的選項，蘭嶼船班多、<br>
+        可選擇恆春/台東搭船、蘭嶼船票比較下來也經濟實惠，不過耗時跟容易暈船倒是真的。</p> 
+    <br>
+</section>
+<br> <br> <br><br><br>
+
+
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>台東富岡--蘭嶼航線</h3>
+        <p>從台東富岡漁港前往蘭嶼的客輪有金星八號、綠島之星號可以選擇，</p>
+        <p>航行時間端視海象狀況，約2~2.5小時即可抵達蘭嶼。</p>
+        <p>旺季時蘭嶼回程台東的船班則多會途經綠島為「三角航線」，約加30~40分鐘航程</p>
+        <p><a href="https://ferry.tw/" target="_blank">台東-蘭嶼 / 後壁湖-蘭嶼 船票預訂點這邊</a></p>
+      </div>
+      <div class="col-sm-6">
+        <h3>恆春後壁湖--蘭嶼航線</h3>
+        <p>從後壁湖遊艇港前往蘭嶼的客輪有金星3號、綠島之星3號，</p>
+        <p>航程約需2小時左右抵達蘭嶼，</p>
+        <P>建議從台灣西部出發的朋友可直接搭火車或高鐵至高雄後，</P>
+        <P>再共乘接駁車（需預約）到恆春的後壁湖碼頭前往蘭嶼。</P>
+      </div>
+    </div>
+  </div>
 
 
 

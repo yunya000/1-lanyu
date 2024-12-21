@@ -36,30 +36,37 @@ header {
     top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 15px 0px;
+    padding: 7px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
     border-bottom: 2.3px solid white;
     width: 65%;
-  
 }
+
 
 .navigation a {
     text-decoration: none;
     color: white;
-    padding: 5px 16px;
+    padding: 2px 20px;
     border-radius: 20px;
-    margin: 0 10px;
+    margin: 0 22px;
+    font-size: 16px;
     font-weight: 600;
-    
+    white-space: nowrap; /* 禁止文字換行 */
 }
 
 .navigation a:hover,
 .navigation a.active {
     background-color: rgba(255, 255, 255, 0.8);
     color: rgb(0, 176, 220);
+}
+
+/* 保持水平排列樣式 */
+.navigation .navbar-nav {
+    display: flex; /* 強制水平排列 */
+    
 }
 
 
@@ -97,7 +104,7 @@ header {
 }
 
 
-/*---------------------- 頂部部落介紹說明---------------------- */
+/*---------------------- 蘭嶼部落介紹說明---------------------- */
 .note-foto img{
      position: relative;
      left: 15%; /* 向右偏移 10% */
@@ -143,7 +150,6 @@ header {
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center center; 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px; 
     
@@ -163,6 +169,36 @@ header {
     }
 }
 
+
+
+/* ----------------------搭乘客輪去蘭嶼標題樣式---------------------- */
+.title2 {
+    text-align: center; 
+    padding: 60px 40px;
+    margin-top: 30px;
+    margin-bottom: 50spx; 
+    background-image: url('aboutfoto/deco2.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px; 
+    
+}
+
+.title2 p {
+    font-size: 33px; 
+    font-weight: 700; 
+    color: rgb(77, 62, 62);
+    text-transform: uppercase;
+ 
+ 
+}
+@media (max-width: 768px) {
+    .title p {
+        font-size: 28px; 
+    }
+}
 
 
 /* ---------------------- 朗島部落---------------------- */
@@ -299,6 +335,81 @@ header {
     font-weight: 500; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
+
+
+/*---------------------- 蘭嶼交通---------------------- */
+.transfer-foto img{
+    position: relative;
+    left: 15%; /* 向右偏移 10% */
+   width: 70%; /* 设置统一的宽度 */
+   height: 70%; /* 自动调整高度 */
+   list-style: none;
+}
+
+/* --------------------- 搭乘客輪去蘭嶼--------------------- */
+.container {
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 陰影效果增加層次感 */
+}
+
+.row {
+    margin-top: 20px; 
+}
+
+.col-sm-6 {
+    padding: 20px; /* 每個列內部的間距 */
+}
+
+h3 {
+    font-size: 25px; /* 放大標題字體 */
+    color: #333; /* 深灰文字顏色 */
+    border-bottom: 2px solid #00b0dc; /* 加入底線強調 */
+    padding-bottom: 10px; /* 與底線間隔 */
+    margin-bottom: 10px;
+}
+
+/* 段落文字樣式 */
+p {
+    font-size: 17px; /* 標準字體大小 */
+    color: #555; /* 中灰文字顏色，減少眼睛疲勞 */
+    line-height: 1.5; /* 增加行高，提升閱讀體驗 */
+    margin-bottom: 15px; /* 每段之間的距離 */
+}
+
+/* 超連結樣式 */
+a {
+    color: #00b0dc; /* 超連結文字顏色 */
+    text-decoration: none; /* 移除下劃線 */
+}
+
+a:hover {
+    color: #0078a0; /* 滑鼠懸停時更深的顏色 */
+    text-decoration: underline; /* 懸停時加下劃線 */
+}
+
+/* 確保段落內的超連結樣式 */
+p a {
+    color: #00b0dc !important; /* 強制應用顏色 */
+}
+
+
+
+/* 響應式設計（針對小螢幕的微調） */
+@media (max-width: 576px) {
+    .container {
+        padding: 15px; /* 小螢幕時減少內邊距 */
+    }
+    h3 {
+        font-size: 1.2rem; /* 小螢幕時縮小標題字體 */
+    }
+    p {
+        font-size: 0.9rem; /* 段落文字稍微縮小 */
+    }
+}
+
+
 
 /* ----------------------  回頂部按鈕---------------------- */
 #back-to-top {
