@@ -7,14 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* 全局樣式 */
+/*----------------------- 全局樣式------------------------ */
 body, html {
     margin: 0;
     padding: 0;
     min-height: 100%;
     overflow-x: hidden;
 }
-
+/* --------------------- 頂部導航列---------------------  */
 header {
     position: absolute;
     top: 4%;
@@ -55,8 +55,7 @@ header {
 
 
 
-
-/* Parallax section */
+/* --------------------- 首頁滾動視差圖片---------------------  */
 .parallax {
     position: relative;
     display: flex;
@@ -88,13 +87,37 @@ header {
     font-size: 80px;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    font-family: serif;
-    font-weight:bold;
+    font-family: "DM Serif Text", serif;
+    font-style: italic;
     text-align: left; 
+}
+
+/* 響應式樣式 */
+@media screen and (max-width: 768px) {
+    #text {
+        font-size: 50px;
+        top: 30%;
+        left: 40%;
+        text-align: left;
+    }
     
 }
 
-/* Section styling */
+@media screen and (max-width: 480px) {
+    #text {
+        font-size: 30px;
+        top: 35%;
+        left: 40%;
+        text-align: left;
+    }
+    .parallax img {
+        width: 120%;
+        height: auto;
+    }
+}
+
+
+/* ---------------------穿插段落文字---------------------  */
 .sec {
     position: relative;
     background: #fff;
@@ -106,7 +129,7 @@ header {
     font-size: 25px;
     color: rgb(0, 0, 0);
     margin-bottom: 10px;
-    font-family: STHeiti;
+    font-family: "STHeiti", sans-serif;
 }
 
 .sec p {
@@ -114,15 +137,61 @@ header {
     font-size: 17px;
     color: #000000;
     font-weight: 300;
-    font-family: STHeiti;
+    font-family: "STHeiti", sans-serif;
+    line-height: 1.6; /* 提升文字的可讀性 */
 }
 
-.weltolanyu-text{
+/* 響應式設置 */
+@media screen and (max-width: 1024px) {
+    .sec {
+        padding: 30px 50px; /* 調整內邊距 */
+    }
+
+    .sec h2 {
+        font-size: 22px; /* 縮小標題文字大小 */
+    }
+
+    .sec p {
+        font-size: 15px; /* 縮小段落文字大小 */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sec {
+        padding: 20px 30px; /* 繼續縮小內邊距 */
+    }
+
+    .sec h2 {
+        font-size: 20px; /* 再次縮小標題文字大小 */
+    }
+
+    .sec p {
+        font-size: 14px; /* 再次縮小段落文字大小 */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sec {
+        padding: 15px 20px; /* 手機屏幕上的內邊距 */
+    }
+
+    .sec h2 {
+        font-size: 18px; /* 手機屏幕上的標題文字大小 */
+    }
+
+    .sec p {
+        font-size: 13px; /* 手機屏幕上的段落文字大小 */
+    }
+}
+
+/* --------------------- 網頁動畫相簿---------------------  */
+.weltolanyu-text {
     text-align: center;
     font-size: 90px;
     color: #000000;
-    font-family:Arial;
+    font-family: "Righteous", serif;
     font-weight: 700;
+    margin-bottom: 20px; /* 添加底部间距 */
 }
 
 .Lanyu-foto {
@@ -130,64 +199,119 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px; /* 添加内边距以分隔图片 */
-    white-space: nowrap; /* 確保所有列表項水平排列 */
+    padding: 20px;
 }
 
 .Lanyu-foto img {
-    width: 300px; /* 设置统一的宽度 */
-    height: auto; /* 自动调整高度 */
-    margin: px; /* 图片之间的间距 */
+    width: 300px; /* 设定统一宽度 */
+    height: auto;
+    margin: 10px; /* 图片间距 */
+    transition: transform 0.3s ease; /* 添加动画效果 */
 }
 
+.Lanyu-foto img:hover {
+    transform: scale(1.1); /* 悬停时放大图片 */
+}
 
 .Lanyu-foto ul {
     display: flex;
-    list-style: none; /* 移除點標記 */
+    list-style: none;
     padding: 0;
     margin: 0;
+    
+    justify-content: center; /* 居中对齐 */
 }
 
 .Lanyu-foto li {
     display: inline-block;
-    margin-right: 10px; /* 設定圖片之間的間距 */
+    margin: 10px; /* 图片之间的间距 */
 }
 
+/* 響應式設置 */
+@media screen and (max-width: 1024px) {
+    .weltolanyu-text {
+        font-size: 70px; /* 縮小標題文字大小 */
+    }
+
+    .Lanyu-foto img {
+        width: 250px; /* 調整圖片寬度 */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .weltolanyu-text {
+        font-size: 50px; /* 再次縮小標題文字大小 */
+    }
+
+    .Lanyu-foto img {
+        width: 200px; /* 繼續縮小圖片尺寸 */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .weltolanyu-text {
+        font-size: 30px; /* 手機屏幕上的標題文字大小 */
+        margin: 10px 0; /* 增加垂直間距 */
+    }
+
+    .Lanyu-foto img {
+        width: 150px; /* 小屏幕上圖片寬度 */
+    }
+
+    .Lanyu-foto ul {
+        flex-wrap: wrap; /* 確保小屏幕換行 */
+    }
+
+    .Lanyu-foto li {
+        margin: 5px; /* 減少圖片之間的間距 */
+    }
+}
+
+
+
+/* --------------------- footer---------------------  */
 .simple-footer {
     background-color: rgb(0, 125, 220);
     color: #fff;
     text-align: center;
-    padding: 10px 0;
     font-family: Arial, sans-serif;
     font-size: 14px;
+    padding: 10px 0;
 }
 
+/* 背景圖片 */
 .simple-footer {
     background-image: url('pic1.PNG');
     background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center center; 
+    background-repeat: no-repeat;
+    background-position: center center;
     text-align: center;
     padding: 150px 0;
     width: 100%;
     font-family: Arial, sans-serif;
     font-size: 14px;
- 
 }
 
+/* 響應式設計 */
 @media (max-width: 768px) {
-    header {
-        padding: 18px 50px;
+    .simple-footer {
+        padding: 80px 0; /* 中小屏幕減少內邊距 */
     }
-    .navigation a {
-        font-size: 14px;
-    }
-    #text {
-        font-size: 2em;
-    }
-    .sec {
-        padding: 20px;
+
+    .simple-footer p {
+        font-size: 12px; /* 調整字體大小 */
     }
 }
+
+@media (max-width: 576px) {
+    .simple-footer {
+        padding: 50px 0; /* 更小屏幕時再縮小內邊距 */
+    }
+
+    .simple-footer p {
+        font-size: 12px; /* 字體大小再次縮小 */
+    }
+}
+
 
   
