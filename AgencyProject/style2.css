@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --------------------- 全局樣式---------------------  */
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+   
+}
+
+
+body {
+    background-image: url('aboutfoto/background.png'); /* 設定背景圖片 */
+    background-size: cover; /* 背景圖片覆蓋整個頁面 */
+    background-position: center; /* 背景圖片居中顯示 */
+    background-attachment: fixed; /* 背景圖片隨著滾動固定 */
+    background-repeat: no-repeat; /* 禁止背景圖片重複 */
+}
+
+
+
+
+/* --------------------- 頂部樣式---------------------  */
+
+
+header {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 2.3px solid white;
+    width: 65%;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 20px;
+    border-radius: 20px;
+    margin: 0 22px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap; /* 禁止文字換行 */
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 176, 220);
+}
+
+/* 保持水平排列樣式 */
+.navigation .navbar-nav {
+    display: flex; /* 強制水平排列 */
+    
+}
+
+
+/* ---------------------- 小視窗的樣式----------------------  */
+#tooltip {
+    display: none; /* 默認隱藏 */
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    font-size: 14px;
+}
+
+#tooltip ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tooltip ul li {
+    margin: 5px 0;
+}
+
+#tooltip ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#tooltip ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/*---------------------- 蘭嶼部落介紹說明---------------------- */
+.note-foto img {
+    position: relative;
+    left: 15%; /* 向右偏移 */
+    width: 70%; /* 設定圖片寬度 */
+    height: auto; /* 自動調整高度以保持比例 */
+    list-style: none;
+    max-width: 100%; /* 確保圖片不會超出容器 */
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .note-foto img {
+        left: 5%; /* 減少偏移量，適合小屏幕 */
+        width: 90%; /* 擴大圖片寬度以填滿空間 */
+    }
+}
+
+@media (max-width: 576px) {
+    .note-foto img {
+        left: 0; /* 移除偏移量 */
+        width: 100%; /* 圖片寬度佔滿容器 */
+    }
+}
+
+
+
+/* ---------------------- 島嶼地圖----------------------*/
+.map-foto {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: auto; /* 移除固定高度，根據內容自適應 */
+    overflow: visible; /* 確保內容不被裁切 */
+    position: relative;
+    padding: 20px; /* 增加適當的內邊距 */
+}
+
+.map-foto .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    position: relative; /* 保持正常佈局 */
+}
+
+.map-foto img {
+    max-width: 100%; /* 圖片寬度佔滿容器 */
+    height: auto; /* 自適應高度，保持比例 */
+    margin: 0 auto; /* 居中對齊 */
+    display: block; /* 修正 inline 元素的間距問題 */
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .map-foto {
+        padding: 10px; /* 減少小屏幕的內邊距 */
+    }
+
+    .map-foto img {
+        max-width: 100%; /* 小屏幕下保持圖片寬度 */
+        margin: 0; /* 確保圖片居中 */
+    }
+}
+
+@media (max-width: 576px) {
+    .map-foto img {
+        max-width: 100%; /* 完全適應小屏幕 */
+    }
+}
+
+
+
+
+/* ----------------------部落標題樣式---------------------- */
+.title {
+    text-align: center; 
+    padding: 20px 20px;
+    margin-top: 30px;
+    margin-bottom: 50px; 
+    letter-spacing: 2px; 
+    
+}
+
+.title p {
+    font-size: 60px; 
+    font-weight: 600; 
+    color: rgb(255, 255, 255);
+    font-family: "Noto Serif HK", serif;
+    text-transform: uppercase;
+
+}
+@media (max-width: 768px) {
+    .title p {
+        font-size: 28px; 
+    }
+}
+
+
+
+/* ----------------------搭乘客輪去蘭嶼標題樣式---------------------- */
+.title2 {
+    text-align: center; 
+    padding: 60px 40px;
+    margin-top: 30px;
+    margin-bottom: 50spx; 
+    letter-spacing: 2px; 
+    
+}
+.title2 h4 {
+    font-size: 25px; 
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-family: "Noto Serif HK", serif;
+    text-transform: uppercase;
+}
+
+ 
+.title2 p {
+    font-size: 20px; 
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-family: "Noto Serif HK", serif;
+    text-transform: uppercase;
+    line-height: 1.6; /* 增加行高，提升閱讀體驗 */
+
+ 
+ 
+}
+@media (max-width: 768px) {
+    .title p {
+        font-size: 28px; 
+    }
+}
+
+
+/* ---------------------- 朗島部落---------------------- */
+.langdao .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* 小螢幕自動換行 */
+    gap: 20px; /* 子元素間距 */
+}
+
+.langdao .wrapper li {
+    list-style: none;
+    flex: 1 1 45%; /* 響應式寬度，最小寬度45% */
+    max-width: 50%; /* 最大寬度為50% */
+}
+
+.langdao img {
+    max-width: 100%; /* 圖片寬度填滿容器 */
+    height: auto; /* 高度自適應 */
+    border-radius: 10px; /* 圖片圓角效果 */
+}
+
+.langdao p {
+    margin: 0;
+    font-size: 18px; /* 字體大小 */
+    line-height: 1.5; /* 行高提升閱讀性 */
+    color: white;
+    text-align: left; /* 文字靠左對齊 */
+    font-size: 20px; /* 字體大小 */
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 加入文字陰影 */
+    margin-top: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40px; /* 與上方內容保持間距 */
+}
+
+.divider {
+    width: 100%; /* 分隔線寬度 */
+    max-width: 1200px; /* 限制最大寬度 */
+    height: 1px; /* 分隔線高度 */
+    background-color: #ffffff; /* 分隔線顏色 */
+    margin: 0 auto;
+}
+
+
+/* 響應式設計 */
+@media (max-width: 992px) {
+    .langdao .wrapper li {
+        flex: 1 1 100%; /* 中屏幕時每行一個元素 */
+        max-width: 100%;
+    }
+
+    .langdao p {
+        font-size: 18px; /* 調整字體大小 */
+        text-align: center; /* 改為置中對齊 */
+    }
+}
+
+@media (max-width: 768px) {
+    .langdao .wrapper {
+        padding: 10px; /* 減少內邊距 */
+        gap: 15px; /* 減小子元素間距 */
+    }
+
+    .langdao p {
+        font-size: 16px; /* 字體進一步縮小 */
+    }
+}
+
+@media (max-width: 576px) {
+    .langdao .wrapper li {
+        flex: 1 1 100%; /* 超小屏幕每行一個元素 */
+        text-align: center; /* 圖文置中對齊 */
+    }
+
+    .langdao img {
+        max-width: 90%; /* 縮小圖片 */
+        margin: 0 auto; /* 圖片置中 */
+    }
+
+    .langdao p {
+        font-size: 14px; /* 字體縮小 */
+        text-align: center; /* 文字置中 */
+    }
+
+    .title {
+        padding: 5px; /* 減少標題內邊距 */
+    }
+
+    .divider {
+        max-width: 90%; /* 分隔線寬度縮小 */
+    }
+}
+
+  
+
+
+/* ---------------------- 椰油部落---------------------- */
+.yayo .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* 小屏幕時內容自動換行 */
+    gap: 20px; /* 子元素間距 */
+}
+
+.yayo .wrapper li {
+    list-style: none;
+    flex: 1 1 45%; /* 響應式寬度，最小寬度45% */
+    max-width: 50%; /* 最大寬度50% */
+}
+
+.yayo img {
+    max-width: 100%; /* 圖片寬度填滿容器 */
+    height: auto; /* 高度自適應 */
+    border-radius: 10px; /* 圖片圓角效果 */
+}
+
+.yayo p {
+    margin: 0;
+    font-size: 18px; /* 基本字體大小 */
+    line-height: 1.5; /* 增加行高提升閱讀性 */
+    color: white; /* 文字顏色 */
+    text-align: left; /* 文字靠左對齊 */
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 加入文字陰影 */
+    margin-top: 10px;
+}
+
+/* 分隔線和標題樣式 */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40px; /* 與上方內容保持間距 */
+}
+
+.divider {
+    width: 100%; /* 分隔線寬度 */
+    max-width: 1200px; /* 限制最大寬度 */
+    height: 1px; /* 分隔線高度 */
+    background-color: #ffffff; /* 分隔線顏色 */
+    margin: 0 auto;
+}
+
+/* 響應式設計 */
+@media (max-width: 992px) {
+    .yayo .wrapper li {
+        flex: 1 1 100%; /* 中屏幕時每行一個元素 */
+        max-width: 100%;
+    }
+
+    .yayo p {
+        font-size: 18px; /* 調整字體大小 */
+        text-align: center; /* 文字置中 */
+    }
+}
+
+@media (max-width: 768px) {
+    .yayo .wrapper {
+        padding: 10px; /* 減少內邊距 */
+        gap: 15px; /* 減小子元素間距 */
+    }
+
+    .yayo p {
+        font-size: 16px; /* 字體大小縮小 */
+    }
+}
+
+@media (max-width: 576px) {
+    .yayo .wrapper li {
+        flex: 1 1 100%; /* 超小屏幕每行一個元素 */
+        text-align: center; /* 圖文置中對齊 */
+    }
+
+    .yayo img {
+        max-width: 90%; /* 縮小圖片寬度 */
+        margin: 0 auto; /* 圖片置中 */
+    }
+
+    .yayo p {
+        font-size: 14px; /* 字體大小縮小 */
+        text-align: center; /* 文字置中 */
+    }
+
+    .title {
+        padding: 5px; /* 減少標題內邊距 */
+    }
+
+    .divider {
+        max-width: 90%; /* 分隔線寬度縮小 */
+    }
+}
+
+    
+
+/* ---------------------- 東清部落---------------------- */
+.dongching .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* 小屏幕時內容自動換行 */
+    gap: 20px; /* 子元素間距 */
+}
+
+.dongching .wrapper li {
+    list-style: none;
+    flex: 1 1 45%; /* 響應式寬度，最小寬度45% */
+    max-width: 50%; /* 最大寬度50% */
+}
+
+.dongching img {
+    max-width: 100%; /* 圖片寬度填滿容器 */
+    height: auto; /* 高度自適應 */
+    border-radius: 10px; /* 圖片圓角效果 */
+}
+
+.dongching p {
+    margin: 0;
+    font-size: 18px; /* 基本字體大小 */
+    line-height: 1.5; /* 增加行高提升閱讀性 */
+    color: white; /* 文字顏色 */
+    text-align: left; /* 文字靠左對齊 */
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 加入文字陰影 */
+    margin-top: 10px;
+}
+
+/* 分隔線和標題樣式 */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40px; /* 與上方內容保持間距 */
+}
+
+.divider {
+    width: 100%; /* 分隔線寬度 */
+    max-width: 1200px; /* 限制最大寬度 */
+    height: 1px; /* 分隔線高度 */
+    background-color: #ffffff; /* 分隔線顏色 */
+    margin: 0 auto;
+}
+
+/* 響應式設計 */
+@media (max-width: 992px) {
+    .dongching .wrapper li {
+        flex: 1 1 100%; /* 中屏幕時每行一個元素 */
+        max-width: 100%;
+    }
+
+    .dongching p {
+        font-size: 18px; /* 調整字體大小 */
+        text-align: center; /* 文字置中 */
+    }
+}
+
+@media (max-width: 768px) {
+    .dongching .wrapper {
+        padding: 10px; /* 減少內邊距 */
+        gap: 15px; /* 減小子元素間距 */
+    }
+
+    .dongching p {
+        font-size: 16px; /* 字體大小縮小 */
+    }
+}
+
+@media (max-width: 576px) {
+    .dongching .wrapper li {
+        flex: 1 1 100%; /* 超小屏幕每行一個元素 */
+        text-align: center; /* 圖文置中對齊 */
+    }
+
+    .dongching img {
+        max-width: 90%; /* 縮小圖片寬度 */
+        margin: 0 auto; /* 圖片置中 */
+    }
+
+    .dongching p {
+        font-size: 14px; /* 字體大小縮小 */
+        text-align: center; /* 文字置中 */
+    }
+
+    .title {
+        padding: 5px; /* 減少標題內邊距 */
+    }
+
+    .divider {
+        max-width: 90%; /* 分隔線寬度縮小 */
+    }
+}
+
+    
+/* --------------------- 紅頭部落--------------------- */
+.redhead .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* 小屏幕時內容自動換行 */
+    gap: 20px; /* 子元素間距 */
+}
+
+.redhead .wrapper li {
+    list-style: none;
+    flex: 1 1 45%; /* 響應式寬度，最小寬度45% */
+    max-width: 50%; /* 最大寬度50% */
+}
+
+.redhead img {
+    max-width: 100%; /* 圖片寬度填滿容器 */
+    height: auto; /* 高度自適應 */
+    border-radius: 10px; /* 圖片圓角效果 */
+}
+
+.redhead p {
+    margin: 0;
+    font-size: 18px; /* 基本字體大小 */
+    line-height: 1.5; /* 增加行高提升閱讀性 */
+    color: white; /* 文字顏色 */
+    text-align: left; /* 文字靠左對齊 */
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 加入文字陰影 */
+    margin-top: 10px;
+}
+
+/* 分隔線和標題樣式 */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40px; /* 與上方內容保持間距 */
+}
+
+.divider {
+    width: 100%; /* 分隔線寬度 */
+    max-width: 1200px; /* 限制最大寬度 */
+    height: 1px; /* 分隔線高度 */
+    background-color: #ffffff; /* 分隔線顏色 */
+    margin: 0 auto;
+}
+
+/* 響應式設計 */
+@media (max-width: 992px) {
+    .redhead .wrapper li {
+        flex: 1 1 100%; /* 中屏幕時每行一個元素 */
+        max-width: 100%;
+    }
+
+    .redhead p {
+        font-size: 18px; /* 調整字體大小 */
+        text-align: center; /* 文字置中 */
+    }
+}
+
+@media (max-width: 768px) {
+    .redhead .wrapper {
+        padding: 10px; /* 減少內邊距 */
+        gap: 15px; /* 減小子元素間距 */
+    }
+
+    .redhead p {
+        font-size: 16px; /* 字體大小縮小 */
+    }
+}
+
+@media (max-width: 576px) {
+    .redhead .wrapper li {
+        flex: 1 1 100%; /* 超小屏幕每行一個元素 */
+        text-align: center; /* 圖文置中對齊 */
+    }
+
+    .redhead img {
+        max-width: 90%; /* 縮小圖片寬度 */
+        margin: 0 auto; /* 圖片置中 */
+    }
+
+    .redhead p {
+        font-size: 14px; /* 字體大小縮小 */
+        text-align: center; /* 文字置中 */
+    }
+
+    .title {
+        padding: 5px; /* 減少標題內邊距 */
+    }
+
+    .divider {
+        max-width: 90%; /* 分隔線寬度縮小 */
+    }
+}
+/*---------------------- 蘭嶼交通---------------------- */
+.transfer-foto img {
+    position: relative;
+    left: 15%; /* 向右偏移 */
+    width: 70%; /* 設定圖片寬度 */
+    height: auto; /* 自動調整高度以保持比例 */
+    list-style: none;
+    max-width: 100%; /* 確保圖片不會超出容器 */
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .transfer-foto img {
+        left: 5%; /* 減少偏移量，適合小屏幕 */
+        width: 90%; /* 擴大圖片寬度以填滿空間 */
+    }
+}
+
+@media (max-width: 576px) {
+    .transfer-foto img {
+        left: 0; /* 移除偏移量 */
+        width: 100%; /* 圖片寬度佔滿容器 */
+    }
+}
+
+/* --------------------- 搭乘客輪、飛機去蘭嶼--------------------- */
+/* 容器樣式 */
+.container2 {
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 10px; 
+    padding: 50px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* 列與單元格樣式 */
+.col-sm-6 {
+    padding: 30px;
+}
+
+.col-sm-4 {
+    padding: 30px;
+}
+
+/* 標題樣式 */
+h3 {
+    font-size: 1.5rem; 
+    color: #333; 
+    border-bottom: 1px solid #000; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
+}
+
+/* 段落文字樣式 */
+p {
+    font-size: 1rem; 
+    color: #555; 
+    line-height: 1.6; 
+    margin-bottom: 15px;
+}
+
+/* 表格樣式 */
+.flight-schedule {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px;
+}
+
+.flight-schedule th,
+.flight-schedule td {
+    border-bottom: 1px solid #ddd; 
+    text-align: left; 
+    padding: 12px;
+}
+
+.flight-schedule th {
+    font-weight: bold; 
+    text-transform: uppercase; 
+    color: #333;
+}
+
+  /* 超連結樣式 */
+  .container2 a {
+    color: #429dff; /* 超連結顏色 */
+    text-decoration: none; /* 去除底線 */
+    font-weight: bold; /* 粗體 */
+  }
+  
+  .container2 a:hover {
+    text-decoration: underline; /* 懸停顯示底線 */
+  }
+
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .flight-schedule th, 
+    .flight-schedule td {
+        font-size: 0.9rem; 
+        padding: 8px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        padding: 20px;
+    }
+}
+
+
+
+
+/* ----------------------  回頂部按鈕---------------------- */
+#back-to-top {
+    position: fixed;
+    bottom: 40px; 
+    right: 40px; 
+    background-color: #ffffff; 
+    color: rgb(0, 52, 207); 
+    border-radius: 50%;
+    width: 60px; 
+    height: 60px;
+    font-size: 25px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+#back-to-top:hover {
+    background-color: #f9ff58;
+}
+
+
+
+/* --------------------- 部落書籤---------------------  */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* 水平置中 */
+    padding: 40px 15px; /* 頂部和側邊間距 */
+    border-radius: 8px; /* 圓角設計 */
+}
+
+.row {
+    margin: 0 -15px; /* 調整間距 */
+    display: flex;
+    flex-wrap: wrap; /* 讓子元素在小屏幕時自動換行 */
+    justify-content: center; /* 子元素居中對齊 */
+}
+
+.col {
+    padding: 17px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+   
+    flex: 1 1 200px; /* 響應式列寬度，最小200px */
+    max-width: 300px; /* 限制最大寬度 */
+    transition: all 0.3s ease; /* 平滑過渡效果 */
+}
+
+.col:hover {
+    transform: translateY(-10px);
+    background: rgb(216, 205, 176);
+    color: #fff;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.container a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 響應式設計 */
+@media (max-width: 992px) {
+    .col {
+        font-size: 20px; /* 中型螢幕減小字體大小 */
+        flex: 1 1 45%; /* 列寬度為容器的45% */
+    }
+}
+
+@media (max-width: 768px) {
+    .col {
+        font-size: 18px; /* 小螢幕進一步縮小字體大小 */
+        flex: 1 1 100%; /* 每行一個項目 */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 20px 10px; /* 減少小螢幕的內邊距 */
+    }
+    .col {
+        font-size: 16px; /* 超小螢幕的字體大小 */
+    }
+}
+
+
+/* --------------------- footer---------------------  */
+.simple-footer {
+    background-color: rgb(0, 125, 220);
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+/* 背景圖片 */
+.simple-footer {
+    background-image: url('pic1.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    padding: 150px 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .simple-footer {
+        padding: 80px 0; /* 中小屏幕減少內邊距 */
+    }
+
+    .simple-footer p {
+        font-size: 12px; /* 調整字體大小 */
+    }
+}
+
+@media (max-width: 576px) {
+    .simple-footer {
+        padding: 50px 0; /* 更小屏幕時再縮小內邊距 */
+    }
+
+    .simple-footer p {
+        font-size: 12px; /* 字體大小再次縮小 */
+    }
+}

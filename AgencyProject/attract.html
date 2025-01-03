@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-lanyu-about</title>
+    
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js"></script>
+       
+      <!-- 引入 Swiper 的 CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Noto+Serif+HK:wght@200..900&family=Playwrite+DE+SAS+Guides&family=Righteous&family=Rubik+Mono+One&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+
+</head>
+<body background="aboutfoto/back.png";>
+
+
+
+    <!---------------------------- 回頂部按鈕 ---------------------------->
+<button id="back-to-top" class="btn btn-primary">↑</button>
+
+<!----------------------------右上角LOGO----------------------------->
+<div class="wrapper">
+    <div class="nav">
+        <div class="logo">
+            <h1>
+                <span>LAN<br>YU</span>
+                <br>
+                Attractions
+            </h1>
+        </div>
+<!----------------------------右側導航列----------------------------->
+        <div class="menu-links">
+            <ul>
+                <li><a href="./index.html" class="nav-link ">首頁</a></li>
+                <li><a href="./about.html" class="nav-link">關於蘭嶼</a></li>
+                <li> <a href="./attract.html" class="nav-link">推薦景點</a></li>
+            </ul>
+        </div>
+
+         <div class="Attractions">Attractions</div>
+
+    </div>
+</div>
+<!----------------------------目錄----------------------------->
+<div class="start">
+    <a href="#att-title">景點介紹</a>
+    <a href="#food-title">美食介紹</a>
+</div>
+
+<!----------------------------左上角文字----------------------------->
+<div class="text">
+    <div class="title">LanYu</div>
+    <p>Start Your Journey</p>
+</div>
+
+
+<!----------------------------中間圈圈----------------------------->
+<div class="ellipse-container">
+    <div class="ellipse thin"></div>
+    <div class="ellipse thick"></div>
+    <div class="ellipse blue"></div>
+</div>
+
+<!----------------------------空白----------------------------->
+<div class="section" id="a">
+    <div class="content">
+        <h2></h2>
+    </div>
+</div>
+<!----------------------------推薦景點----------------------------->
+<section class="title2" id="animatedImage">
+    <br><br><br><br>
+    <h4>推薦景點</h4>
+    <p><br>
+        蘭嶼秘境眾多，但基於保護原住民部落及原始生態，<br>
+        許多景點幾乎都沒有明顯指標，且手機網路在這也常常沒訊號，<br>
+        因此特別幫大家列出景點的相對位置資訊，<br>
+        以下是蘭嶼的景點地圖！
+    </p>
+    <br>
+</section>
+
+<!----------------------------景點地圖----------------------------->
+<div class="section" id="attractions">
+    <div class="image">
+        <img src="aboutfoto/att2.png" alt="景點地圖" id="animatedImage">
+    </div>
+</div>
+
+<!----------------------------景點照片----------------------------->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="slider-copy">
+                <div class="header">1.東清秘境</div>
+                <img src="./aboutfoto/東清秘境.jpg" alt="Image 1" />
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slider-copy">
+                <div class="header">2.東清灣</div>
+                <img src="./aboutfoto/東清灣.jpg" alt="Image 2" />
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slider-copy">
+                <div class="header">3.青青草原</div>
+                <img src="./aboutfoto/青青草原.jpg" alt="Image 3" />
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slider-copy">
+                <div class="header">4.情人洞</div>
+                <img src="./aboutfoto/情人洞.jpg" alt="Image 4" />
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slider-copy">
+                <div class="header">5.雙獅岩</div>
+                <img src="./aboutfoto/雙獅岩.jpg" alt="Image 5" />
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+    
+
+
+
+<div class="section" id="att">
+    <div class="att">
+        <img src="./aboutfoto/dongching.png" alt="att1" class="image">
+        <h2>蘭嶼景點推薦【東清秘境】</h2>
+        <p>位置：從「東清三十三號」早餐店旁小路進入停車處後步行前往。
+            <P>小提醒：此處為礁石形成勿赤腳前往並注意尖銳處。</P>
+            <P>鬼斧神工的天然海蝕洞包圍著透明的海水，</P>
+            <p>而且旅人還可入內游泳有如天然的游泳池，</p>
+            <p>蘭嶼藍的海水配上礁石從上俯拍是來這必取景的角度。</p>
+    </div>
+</div>
+
+<div class="section" id="att">
+    <div class="att">
+        <img src="./aboutfoto/dongching.png" alt="att1" class="image">
+        <h2>蘭嶼景點推薦【情人洞】</h2>
+        <p>位置：約在環島公路14K處注意護欄上的「情人洞」指標。</p>
+            <P>情人洞周圍礁石眾多建議穿膠鞋前往，周邊浪大切勿下水。</P>
+            <P>情人洞是天然的海蝕洞，佇立在礁岩邊有如海上拱門，</P>
+            <p>情人洞內形成一片湛藍天空與海平面的絕景是取景的好視角。</p>
+    </div>
+</div>
+
+
+<div class="section" id="att">
+    <div class="att">
+        <img src="./aboutfoto/dongching.png" alt="att1" class="image">
+        <h2>蘭嶼景點推薦【青青草原】</h2>
+        <p>位置：入口於環島公路上</p>
+            <P>小提醒：由步道口走到觀景的好望角需約15分鐘，</P>
+            <P>建議提早30分鐘前抵達卡建議提早3位才不會錯過夕陽。</P>
+            <p>青青草原是蘭嶼最寬廣的草原，</p>
+            <p>直通海面的絕佳視角，現在則為成為蘭嶼南方賞夕陽的熱點。</p>
+    </div>
+</div>
+
+<!----------------------------推薦美食----------------------------->
+<section class="title2" id="food-title">
+    <br><br><br><br> <br><br><br><br>
+    <h4>推薦美食</h4>
+    <p><br>
+        蘭嶼，不僅擁有迷人的自然景觀，，<br>
+        還有無數令人垂涎的地道美食。<br>
+        來到蘭嶼，怎能錯過這些必試的美味呢？<br>
+    </p>
+    <br>
+</section>
+
+
+<!----------------------------美食照片----------------------------->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="slider-copy">
+                <div class="header">1.蘭嶼旅人</div>
+                <img src="./aboutfoto/att5.jpg" alt="Image 1" />
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slider-copy">
+                <div class="header">2.雯雯芋頭冰</div>
+                <img src="./aboutfoto/att10.png" alt="Image 2" />
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slider-copy">
+                <div class="header">3.東清三十三</div>
+                <img src="./aboutfoto/att9.png" alt="Image 3" />
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slider-copy">
+                <div class="header">4.在海邊 do vanwa</div>
+                <img src="./aboutfoto/att11.jpg" alt="Image 4" />
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slider-copy">
+                <div class="header">5.有一間燒烤 蘭嶼東清店</div>
+                <img src="./aboutfoto/att12.jpg" alt="Image 5" />
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+    
+
+
+<div class="section" id="att">
+    <div class="att">
+        <img src=".//aboutfoto/att17.jpg" alt="att1" class="image">
+        <h2>蘭嶼雯雯芋頭冰</h2>
+        <p>地點：台東縣蘭嶼鄉紅頭村20號</p>
+            <P>雯雯芋頭冰是蘭嶼歷史悠久的知名店家，</P>
+            <P>他們家除了招牌芋頭冰很厲害，</P>
+            <p>焦糖綠豆沙、雯雯特調等商品也都相當受遊客歡迎哦！</p>
+            <p>但是最特別的莫過於他們家的炸飛魚，一定要嘗試看看!</p>
+    </div>
+</div>
+<br> <br> <br>
+<div class="section" id="att">
+    <div class="att">
+        <img src="./indexfoto/d.PNG" alt="att1" class="image">
+        <h2>蘭嶼旅人</h2>
+        <p>地點：台東縣蘭嶼鄉紅頭村漁人25之1號</p>
+            <P>蘭嶼旅人是一間美式餐廳，更是一間酒吧，</P>
+            <P>餐點有水準之外，調酒更是超多人推薦，</P>
+            <p>但《蘭嶼旅人》最招牌的莫過於那無敵海景，前方就是「八代灣」。</p>
+    </div>
+</div>
+<br> <br> <br> <br> 
+<div class="section" id="att">
+    <div class="att">
+        <img src="./aboutfoto/att14.jpg" alt="att1" class="image">
+        <h2>東清三十三號</h2>
+        <p>地點：台東縣蘭嶼鄉東清村33號</p>
+            <P>蘭嶼超夯早餐選擇！</P>
+            <P>店內不僅有觀賞海景的座位區，食物也相當出色！</P>
+            <p>最有名的是各種口味脆皮蛋餅，</p>
+            <p>很多遊客都會在欣賞完著名的東清灣日出後，到店內用餐！</p>
+    </div>
+</div>
+
+<br> <br> <br> <br> <br> <br>
+
+<!---------------------- footer------------------->
+<footer class="simple-footer">
+    <p> Get ready for this adventure!<br>2024 © Yunya Backpackers Lanyu All Rights Reserved.</p>
+  
+</footer>
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+    <!-- 引入 景點地圖GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        // 等待頁面加載完成後執行動畫
+        document.addEventListener('DOMContentLoaded', () => {
+            // 使用 GSAP 創建上下浮動效果
+            gsap.to("#animatedImage", {
+                y: "-30px", // 向上移動 20px
+                repeat: -1, // 無限重複
+                yoyo: true, // 動畫往返
+                duration: 1, // 每次浮動的持續時間為 1 秒
+                ease: "power1.inOut", // 平滑的緩動效果
+            });
+        });
+    </script>
+
+  <!-- 引入 GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+      // 等待頁面載入完成後執行動畫
+      document.addEventListener('DOMContentLoaded', () => {
+          // 使用 GSAP 為文字創建淡入和向上滑動效果
+          gsap.to("#att-title", {
+              opacity: 1,          // 漸變至完全可見
+              y: 0,                // 恢復到原始位置
+              duration: 1.5,       // 動畫持續時間為 1.5 秒
+              ease: "power2.out",  // 使用平滑的緩動效果
+          });
+      });
+  </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const backToTopButton = document.getElementById('back-to-top');
+    
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) { // 超過 200px 時顯示按鈕
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+    </script>
+
+
+<script src="script3.js"></script>
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>   

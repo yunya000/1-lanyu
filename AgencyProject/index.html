@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-lanyu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Playwrite+DE+SAS+Guides&family=Righteous&family=Rubik+Mono+One&family=Ysabeau+SC:wght@1..1000&display=swap');
+        </style>
+   <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js"></script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navigation">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">關於蘭嶼</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./attract.html" class="nav-link">推薦景點</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+      
+<!---------------------- 首頁滾動視差圖片-------------------->
+    <section class="parallax">
+        <img src="07.png" id="p7">
+        <img src="06.png" id="p6">
+        <img src="05.png" id="p5">
+        <h2 id="text">Welcome to<br>Lanyu.</h2>
+        <img src="04.png" id="p4">
+        <img src="03.png" id="p3">
+        <img src="02.png" id="p2">
+        <img src="01.png" id="p1">
+        <img src="01-1.png" id="p11">
+    </section>
+    
+
+<!---------------------- 穿插段落文字-------------------->
+    <section class="sec">
+        
+        <br><br><br>
+        <h2>神秘的蘭嶼...</h2>
+        <p>蘭嶼，位於台灣東南方的太平洋海域，<br>
+            因其純淨的自然美景和豐富的文化底蘊，吸引著許多旅人的目光。<br><br>
+            走進蘭嶼，您將發現一座保留原始風貌的世外桃源。<br>
+            遠離塵囂，與大自然親密接觸。 <br>
+            讓我們一同走進這片藍色的樂園，感受自然與人文的和諧之美！</p>
+        <br><br><br>
+    </section> 
+
+
+<!---------------------- 網頁動畫相簿-------------------->
+    <section>
+        <section class="weltolanyu-text">
+            <div class="wrapper text">
+                 Travel and Relax
+            </div>
+    </section>
+
+    <section class="Lanyu-foto">
+        <ul class="wrapper">
+            <li><img height="874px" src="indexfoto/a.PNG" width="1240px"> </li>
+            <li><img height="874px" src="indexfoto/b.PNG" width="1240px"></li>
+            <li><img height="874px" src="indexfoto/c.PNG" width="1240px"></li>
+            <li><img height="874px" src="indexfoto/d.PNG" width="1240px"></li>
+        </ul>
+    </section>
+
+    <section class="Lanyu-foto">
+        <ul class="wrapper">
+            <li><img height="874px" src="indexfoto/e.PNG" width="1240px"></li>
+            <li><img height="874px" src="indexfoto/f.PNG" width="1240px"> </li>
+            <li><img height="874px" src="indexfoto/g.PNG" width="1240px"></li>
+            <li><img height="874px" src="indexfoto/h.PNG" width="1240px"> </li>
+        </ul>
+    </section>
+
+    <section class="Lanyu-foto">
+        <ul class="wrapper">
+            <li><img height="874px" src="indexfoto/i.PNG" width="1240px"></li>
+            <li><img height="874px" src="indexfoto/j.PNG" width="1240px"></li>
+            <li><img height="874px" src="indexfoto/k.PNG" width="1240px"></li>
+            <li><img height="874px" src="indexfoto/l.PNG" width="1240px"></li>
+        </ul>
+    </section>
+
+
+    <section>
+        <section class="weltolanyu-text">
+            <div class="wrapper text">
+                 Welcome to Lanyu
+            </div>
+    </section>
+
+
+
+<!---------------------- 穿插段落文字------------------->
+    <section class="sec">
+        <br><br><br>
+        <h2>望著太平洋...</h2>
+        <p>
+            <br>遠離都市塵囂，放鬆身心，<br>探索蘭嶼的自然美景。<br>感受大自然的片刻寧靜，<br>留下獨一無二的美好回憶。<br><br><br>
+        </p>
+    </section> 
+
+
+
+<!---------------------- 照片分享區------------------->
+<h1>Upload Your Photo</h1>
+<form action="http://localhost:3000/upload_photo" method="POST" enctype="multipart/form-data">
+    <label for="photo">Select Photo:</label>
+    <input type="file" name="photo" id="photo" required>
+    <br><br>
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title" placeholder="Photo Title">
+    <br><br>
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" placeholder="Photo Description"></textarea>
+    <br><br>
+    <button type="submit">Upload</button>
+</form>
+
+<!---------------------- footer------------------->
+    <footer class="simple-footer">
+        <p> Get ready for this adventure!<br>2024 © Yunya Backpackers Lanyu All Rights Reserved.</p>
+      
+    </footer>
+    
+    
+    <script>
+       gsap.registerPlugin(ScrollTrigger);
+
+       gsap.utils.toArray('section').forEach((section, index) => {
+    console.log(section, index);
+
+    const wrapper = section.querySelector('.wrapper');
+    if (!wrapper) return; 
+
+    if (index % 2 === 0) {
+        // 偶数索引：左向右``
+        const x = '-100%';
+        const xEnd = (wrapper.scrollWidth - section.offsetWidth) * -1;
+
+        gsap.fromTo(
+            wrapper,
+            { x },
+            {
+                x: xEnd,
+                scrollTrigger: {
+                    trigger: section,
+                    scrub: 1,
+                },
+            }
+        );
+    } else {
+        // 奇數索引：右向左
+        const x = '100%';
+        const xEnd = 0;
+
+        gsap.fromTo(
+            wrapper,
+            { x },
+            {
+                x: xEnd,
+                scrollTrigger: {
+                    trigger: section,
+                    scrub: 1,
+                },
+            }
+        );
+    }
+});
+
+    </script>
+
+ 
+    <script src="script.js"></script>
+
+    <script src="server.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

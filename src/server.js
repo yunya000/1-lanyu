@@ -84,5 +84,5 @@ server.use((req, res) => {
 // 啟動伺服器
 const PORT = 3000;
 server.listen(PORT, () => {
-    console.log(`Server is running at http://localhost:3000`);
+    console.log("Server is running at https://one-lanyu.onrender.com");
 });

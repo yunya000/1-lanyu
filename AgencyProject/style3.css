@@ -1,0 +1,763 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'agency fb';
+    background: url(aboutfoto/back.png) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    /*overflow:hidden;*/
+}
+
+
+
+ul {
+    list-style: none;
+}
+/* ----------------------------右上角LOGO----------------------------- */
+.nav {
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(0%);
+    background: url(aboutfoto/deco3.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    padding: 40px;
+}
+
+.logo h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.logo span {
+    font-size: 60px;
+    line-height: 1;
+}
+
+/* ----------------------------右側導航列---------------------------- */
+.menu-links {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding-top: 50%;
+    margin-top: 110%;
+    z-index: 10;
+}
+
+.menu-links ul li {
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu-links ul li a {
+    color: black;
+}
+
+.menu-links ul li:hover {
+    color: rgb(69, 156, 255);
+}
+
+.Attractions {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.Attractions::before {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid black;
+    width: 65px;
+    margin: 0 10px 0 0;
+    transform: translateY(10px);
+}
+
+/* ----------------------------左上角文字---------------------------- */
+.text {
+    position: absolute;
+    top: 17%;
+    left: 100px;
+    transform: translateY(-50%);
+    text-align: left;
+    color: black;
+    font-weight: 600;
+}
+
+.text .title {
+    font-size: 100px;
+    font-family: "Noto Serif HK", serif;
+    text-transform: uppercase;
+}
+
+/* ----------------------------目錄----------------------------- */
+.start {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    transform: translateY(-50%);
+    background: url(aboutfoto/background.png) no-repeat;
+    padding: 40px 80px;
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.start a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+/* ----------------------------中間圈圈 ---------------------------- */
+.ellipse-container {
+    width: 608px;
+    height: 608px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.ellipse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+.ellipse.thin {
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-color: black;
+    opacity: 0.5;
+}
+
+.ellipse.thick {
+    width: 95%;
+    height: 95%;
+    border-width: 10px;
+    border-color: #ffffff;
+    transform: rotate(-45deg);
+    top: 2.5%;
+    left: 2.5%;
+}
+
+.ellipse.blue {
+    width: 90%;
+    height: 90%;
+    border-width: 10px;
+    border-color: rgb(54, 91, 255) transparent;
+    transform: rotate(-45deg);
+    top: 5%;
+    left: 5%;
+    animation: ellipseRotate 5s linear infinite;
+}
+
+@keyframes ellipseRotate {
+    0% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+/* --------------- 響應式設計：針對不同螢幕尺寸進行調整 --------------- */
+
+/* 手機（最大寬度 767px） */
+@media (max-width: 767px) {
+    .nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+    }
+
+    .logo {
+        position: relative;
+        background: none;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .logo span {
+        font-size: 40px;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        align-items: right;
+        margin-top: -10px;
+        padding-top: 0;
+    }
+
+    .menu-links ul li {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .text .title {
+        font-size: 50px;
+    }
+
+    .start {
+        top: auto;
+        transform: translateY(0);
+        padding: 20px 40px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ellipse-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .ellipse.blue {
+        animation: ellipseRotate 5s linear infinite;
+    }
+}
+
+/* 平板（768px 到 1024px） */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav {
+        width: 200px;
+        height: 100vh;
+    }
+
+    .logo {
+        padding: 30px;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text .title {
+        font-size: 70px;
+    }
+
+    .start {
+       
+        padding: 20px 50px;
+    }
+
+    .ellipse-container {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+/* 桌面設備（最小寬度 1024px） */
+@media (min-width: 1024px) {
+    .nav {
+        width: 200px;
+        height: 100vh;
+    }
+
+    .logo {
+        padding: 40px;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .text .title {
+        font-size: 100px;
+    }
+
+    .ellipse-container {
+        width: 608px;
+        height: 608px;
+    }
+}
+
+
+
+/* ----------------------  回頂部按鈕---------------------- */
+#back-to-top {
+    position: fixed;
+    bottom: 40px; 
+    right: 40px; 
+    background-color: #ffffff; 
+    color: rgb(0, 52, 207); 
+    border-radius: 50%;
+    width: 60px; 
+    height: 60px;
+    font-size: 25px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+#back-to-top:hover {
+    background-color: #f9ff58;
+}
+
+
+
+
+
+
+/*----------------------------section-----------------------------*/
+
+.section {
+    height: 100vh; /* 區塊填滿一整頁高度 */
+    display: flex; /* 使用 Flexbox 進行水平佈局 */
+    align-items: center; /* 垂直置中 */
+    justify-content: space-between; /* 左右兩邊對齊 */
+    padding: 20px;
+    position: relative;
+    margin-top: 140px; /* 增加向下的偏移量 */
+    gap: 600px; /* 新增左右之間的距離，根據需要調整 */
+}
+
+
+
+.image {
+    flex: 1; /* 右側圖片區域占一半寬度 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 55%; /* 限制圖片寬度 */
+    max-height: 55%; /* 限制圖片高度 */
+}
+
+/* 響應式設計 */
+@media (max-width: 1024px) {
+    .section {
+        flex-direction: column; /* 改為垂直排列 */
+        gap: 50px; /* 減少兩個元素之間的間距 */
+    }
+
+    .image img {
+        max-width: 80%; /* 減少圖片寬度 */
+        max-height: 80%; /* 減少圖片高度 */
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column; /* 改為垂直排列 */
+        gap: 30px; /* 減少兩個元素之間的間距 */
+        margin-top: 80px; /* 在較小螢幕中減少上邊距 */
+    }
+
+    .image img {
+        max-width: 90%; /* 再縮小圖片的寬度 */
+        max-height: 90%; /* 再縮小圖片的高度 */
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        flex-direction: column; /* 改為垂直排列 */
+        gap: 20px; /* 減少兩個元素之間的間距 */
+        margin-top: 60px; /* 在超小螢幕中減少上邊距 */
+    }
+
+    .image img {
+        max-width: 100%; /* 讓圖片佔滿整個區域 */
+        max-height: 100%; /* 讓圖片佔滿整個區域 */
+    }
+}
+
+
+
+/*----------------------------推薦景點----------------------------*/
+.title2 {
+    text-align: center; 
+    padding: 60px 40px;
+    margin-top: 30px;
+    margin-bottom: 50spx; 
+    letter-spacing: 2px; 
+    
+}
+.title2 h4 {
+    font-size: 25px; 
+    color: #000000;
+    font-family: "Noto Serif HK", serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+ 
+.title2 p {
+    font-size: 20px; 
+    color: #000000;
+    font-family: "Noto Serif HK", serif;
+    text-transform: uppercase;
+    line-height: 1.6; /* 增加行高，提升閱讀體驗 */
+    font-weight: 600;
+    font-weight: 600;
+
+ 
+ 
+}
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .title2 {
+        padding: 40px 20px; /* 在小螢幕上減少內邊距 */
+        margin-top: 20px;
+    }
+
+    .title2 h4 {
+        font-size: 22px; /* 在較小螢幕上調整標題字體大小 */
+    }
+
+    .title2 p {
+        font-size: 18px; /* 在較小螢幕上調整段落字體大小 */
+    }
+}
+
+@media (max-width: 480px) {
+    .title2 {
+        padding: 30px 15px; /* 在超小螢幕上減少內邊距 */
+        margin-top: 15px;
+    }
+
+    .title2 h4 {
+        font-size: 18px; /* 更小的字體大小 */
+    }
+
+    .title2 p {
+        font-size: 16px; /* 更小的字體大小 */
+    }
+}
+
+
+
+
+/*----------------------------景點照片----------------------------*/
+.container1 {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.nav1{
+    position: relative;
+    width: 8%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.span1 {
+    position: absolute;
+    top:25%;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    width: max-content;
+    font-weight: bolder;
+}
+
+.nav1-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.nav1-items {
+    display: flex;
+    transform: rotate(90deg);
+    padding: 1em 0;
+}
+
+.nav1-items div {
+    padding: 0 1em;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: bolder;
+}
+
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+
+
+.swiper-slide img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-nav1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000; /* 設置箭頭顏色為黑色，確保可見 */
+    font-size: 20px; /* 設置箭頭大小 */
+    z-index: 10; /* 確保箭頭在前景層 */
+    opacity: 1; /* 確保箭頭可見 */
+}
+
+
+.slider-copy {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.header {
+    font-size: 30px;
+    color: #fff;
+    font-family: "Noto Serif HK", serif;
+    text-transform: uppercase;
+    padding-top: 20px; /* 添加向下的內邊距 */
+}
+
+
+.content {
+    position: relative;
+    width: 100%;
+    top: 90vh;
+    padding: 0 2em;
+}
+
+.bottom-nav {
+    padding: 2em 0;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+@media(max-width: 900px) {
+    .container1 {
+        flex-direction: column;
+    }
+
+    .nav1 {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+    }
+
+    .nav1-left span1 {
+        transform: rotate(0);
+        top: auto;
+    }
+
+    .nav1-right {
+        height: 10vh;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav1-items {
+        transform: rotate(0);
+    }
+
+    .nav1-items ion-icon {
+        display: none;
+    }
+}
+
+
+
+/*----------------------------景點照片----------------------------*/
+
+/* 設置 section 的樣式 */
+.section {
+    position: relative;
+    width: 100%;
+    padding: 40px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 讓區塊佔據整個視窗高度 */
+   margin-bottom: 40px; /* 設定每個 section 之間的間距，可以根據需要調整 */
+    
+}
+
+/* 設置內部內容區域的樣式 */
+.att {
+    padding: 30px;
+    border-radius: 10px; /* 圓角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 添加陰影 */
+    max-width: 800px; /* 限制寬度 */
+    width: 100%; /* 讓內容區域自適應寬度 */
+    text-align: center; /* 文字置中 */
+}
+
+/* 設定圖片的樣式 */
+.att .image {
+    max-width: 100%;
+    height: aut100%;
+    margin-bottom: 20px; /* 圖片與文字的間距 */
+    border-radius: 10px; /* 圖片圓角 */
+}
+
+/* 設置標題文字的樣式 */
+.att h2 {
+    font-size: 28px;
+    color: #333333;
+    margin: 20px 0; /* 標題的上下間距 */
+    font-family: "Noto Serif HK", serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* 設置描述文字的樣式 */
+.att p {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+    font-family: "Noto Serif HK", serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+
+
+
+/* --------------------- footer---------------------  */
+.simple-footer {
+    background-color: rgb(0, 125, 220);
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+/* 背景圖片 */
+.simple-footer {
+    background-image: url('pic1.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    padding: 150px 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .simple-footer {
+        padding: 80px 0; /* 中小屏幕減少內邊距 */
+    }
+
+    .simple-footer p {
+        font-size: 12px; /* 調整字體大小 */
+    }
+}
+
+@media (max-width: 576px) {
+    .simple-footer {
+        padding: 50px 0; /* 更小屏幕時再縮小內邊距 */
+    }
+
+    .simple-footer p {
+        font-size: 12px; /* 字體大小再次縮小 */
+    }
+}

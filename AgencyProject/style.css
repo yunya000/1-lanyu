@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*----------------------- 全局樣式------------------------ */
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+/* --------------------- 頂部導航列---------------------  */
+header {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 2.3px solid white;
+    width: 65%;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 20px;
+    border-radius: 20px;
+    margin: 0 22px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap; /* 禁止文字換行 */
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 176, 220);
+}
+
+/* 保持水平排列樣式 */
+.navigation .navbar-nav {
+    display: flex; /* 強制水平排列 */
+    
+}
+
+
+
+/* --------------------- 首頁滾動視差圖片---------------------  */
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallax img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-out;
+}
+
+#text {
+    position: absolute;
+    top: 27%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "DM Serif Text", serif;
+    font-style: italic;
+    text-align: left; 
+}
+
+/* 響應式樣式 */
+@media screen and (max-width: 768px) {
+    #text {
+        font-size: 50px;
+        top: 30%;
+        left: 40%;
+        text-align: left;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    #text {
+        font-size: 30px;
+        top: 35%;
+        left: 40%;
+        text-align: left;
+    }
+    .parallax img {
+        width: 120%;
+        height: auto;
+    }
+}
+
+
+/* ---------------------穿插段落文字---------------------  */
+.sec {
+    position: relative;
+    background: #fff;
+    padding: 50px 100px;
+}
+
+.sec h2 {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-family: "STHeiti", sans-serif;
+}
+
+.sec p {
+    text-align: center;
+    font-size: 17px;
+    color: #000000;
+    font-weight: 300;
+    font-family: "STHeiti", sans-serif;
+    line-height: 1.6; /* 提升文字的可讀性 */
+}
+
+/* 響應式設置 */
+@media screen and (max-width: 1024px) {
+    .sec {
+        padding: 30px 50px; /* 調整內邊距 */
+    }
+
+    .sec h2 {
+        font-size: 22px; /* 縮小標題文字大小 */
+    }
+
+    .sec p {
+        font-size: 15px; /* 縮小段落文字大小 */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sec {
+        padding: 20px 30px; /* 繼續縮小內邊距 */
+    }
+
+    .sec h2 {
+        font-size: 20px; /* 再次縮小標題文字大小 */
+    }
+
+    .sec p {
+        font-size: 14px; /* 再次縮小段落文字大小 */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sec {
+        padding: 15px 20px; /* 手機屏幕上的內邊距 */
+    }
+
+    .sec h2 {
+        font-size: 18px; /* 手機屏幕上的標題文字大小 */
+    }
+
+    .sec p {
+        font-size: 13px; /* 手機屏幕上的段落文字大小 */
+    }
+}
+
+/* --------------------- 網頁動畫相簿---------------------  */
+.weltolanyu-text {
+    text-align: center;
+    font-size: 90px;
+    color: #000000;
+    font-family: "Righteous", serif;
+    font-weight: 700;
+    margin-bottom: 20px; /* 添加底部间距 */
+}
+
+.Lanyu-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.Lanyu-foto img {
+    width: 300px; /* 设定统一宽度 */
+    height: auto;
+    margin: 10px; /* 图片间距 */
+    transition: transform 0.3s ease; /* 添加动画效果 */
+}
+
+.Lanyu-foto img:hover {
+    transform: scale(1.1); /* 悬停时放大图片 */
+}
+
+.Lanyu-foto ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    justify-content: center; /* 居中对齐 */
+}
+
+.Lanyu-foto li {
+    display: inline-block;
+    margin: 10px; /* 图片之间的间距 */
+}
+
+/* 響應式設置 */
+@media screen and (max-width: 1024px) {
+    .weltolanyu-text {
+        font-size: 70px; /* 縮小標題文字大小 */
+    }
+
+    .Lanyu-foto img {
+        width: 250px; /* 調整圖片寬度 */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .weltolanyu-text {
+        font-size: 50px; /* 再次縮小標題文字大小 */
+    }
+
+    .Lanyu-foto img {
+        width: 200px; /* 繼續縮小圖片尺寸 */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .weltolanyu-text {
+        font-size: 30px; /* 手機屏幕上的標題文字大小 */
+        margin: 10px 0; /* 增加垂直間距 */
+    }
+
+    .Lanyu-foto img {
+        width: 150px; /* 小屏幕上圖片寬度 */
+    }
+
+    .Lanyu-foto ul {
+        flex-wrap: wrap; /* 確保小屏幕換行 */
+    }
+
+    .Lanyu-foto li {
+        margin: 5px; /* 減少圖片之間的間距 */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------- 照片分享區---------------------  */
+/* General Section Styling */
+#portfolio {
+    padding: 80px 0;
+    background-color: #f7f7f7; /* light gray background */
+}
+
+#portfolio .section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333; /* dark text color */
+}
+
+#portfolio .section-subheading {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+    color: #777; /* muted text color */
+}
+
+/* Portfolio Items Styling */
+.portfolio-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.portfolio-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.portfolio-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(254, 212, 0, 0.7); /* yellow overlay */
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* white icon */
+}
+
+.portfolio-item:hover .portfolio-hover {
+    opacity: 1; /* show hover effect */
+}
+
+.portfolio-caption {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.portfolio-caption h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.portfolio-caption p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .portfolio-item {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* --------------------- footer---------------------  */
+.simple-footer {
+    background-color: rgb(0, 125, 220);
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+/* 背景圖片 */
+.simple-footer {
+    background-image: url('pic1.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    padding: 150px 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .simple-footer {
+        padding: 80px 0; /* 中小屏幕減少內邊距 */
+    }
+
+    .simple-footer p {
+        font-size: 12px; /* 調整字體大小 */
+    }
+}
+
+@media (max-width: 576px) {
+    .simple-footer {
+        padding: 50px 0; /* 更小屏幕時再縮小內邊距 */
+    }
+
+    .simple-footer p {
+        font-size: 12px; /* 字體大小再次縮小 */
+    }
+}
+
+
+  
